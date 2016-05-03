@@ -1,0 +1,40 @@
+{
+  "name": "d3-test-dane",
+  "version": "1.0.0",
+  "description": "its a proof for d3 libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CYFERIOUS/d3testForDANE.git"
+  },
+  "keywords": [
+    "d3",
+    "javascript",
+    "graphics",
+    "statistics"
+  ],
+  "author": "fercho nossa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CYFERIOUS/d3testForDANE/issues"
+  },
+  "homepage": "https://github.com/CYFERIOUS/d3testForDANE",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3"
+  }
+}

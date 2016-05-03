@@ -1,0 +1,31 @@
+{
+  "name": "d3-test-dane",
+  "description": "its a proof for d3 libraries",
+  "main": "index.js",
+  "authors": [
+    "fercho nossa"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "d3",
+    "javascript",
+    "graphics",
+    "statistics"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "d3": "^3.5.16"
+  }
+}
