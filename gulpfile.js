@@ -8,8 +8,7 @@
 
 var config = {
 	jsConcatFiles: [
-		'./js/behaviors.js', 
-		'./js/classie.js'
+		'./js/controller.js'
 	], 
 	buildFilesFoldersRemove:[
 		'./build/scss/', 
