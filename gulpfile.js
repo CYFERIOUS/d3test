@@ -20,7 +20,7 @@ var config = {
 		'./build/gulpfile.js',
 		'./build/package.json',
 		'./build/maps/',
-		'./build/underConstruction/'
+		'./build/readme.md'
 	]
 };
 
