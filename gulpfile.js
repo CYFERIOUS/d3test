@@ -9,8 +9,7 @@
 var config = {
 	jsConcatFiles: [
 		'./js/controller.js',
-		'./js/tutorialByMe.js',
-		'./js/app.js'
+		'./js/mapColombia.js'
 		
 	], 
 	buildFilesFoldersRemove:[

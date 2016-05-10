@@ -55,10 +55,7 @@ $( document ).ready(function() {
 });
 
 
-var app = angular.module('maps',[]);
-app.controller("test",function(){
 
-});
 
 
 	

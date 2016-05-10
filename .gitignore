@@ -33,3 +33,4 @@ sass-cache/
 *.css-map
 build/
 dist/
+assets/fonts/
