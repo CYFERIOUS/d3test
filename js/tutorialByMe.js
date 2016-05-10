@@ -50,9 +50,8 @@ var testModule = (function () {
 	testModule.d3StyleExample();
 	testModule.d3SVGCircleExample();
 	testModule.d3SVGRectangleExample();
-	function (){ 
-		console.log("ok");
-	}
+   
    
 });
 
+var app = angular.module('maps',[]);
