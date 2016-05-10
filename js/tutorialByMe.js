@@ -1,13 +1,14 @@
 $( document ).ready(function() {
-	
-var testModule = (function () {
+
+	var testModule = (function () {
  
   
 	var canvas = d3.select("body")
 		.append("svg")
 		.attr("width", 200)
 		.attr("height",200);
-		
+	
+	
  
   return {
  
@@ -39,19 +40,29 @@ var testModule = (function () {
 						.attr("width",100)
 						.attr("height",60)
 						.attr("fill","red");
-	}
+	},
   };
  
 })();
-
+	
 	testModule.d3ModuleExample();
 	testModule.d3SelectExample();
 	testModule.d3AppendExample();
 	testModule.d3StyleExample();
 	testModule.d3SVGCircleExample();
 	testModule.d3SVGRectangleExample();
-   
-   
+ 
 });
 
+
 var app = angular.module('maps',[]);
+app.controller("test",function(){
+
+});
+
+
+	
+
+
+
+
