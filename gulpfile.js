@@ -8,8 +8,8 @@
 
 var config = {
 	jsConcatFiles: [
-		'./js/controller.js',
-		'./js/mapColombia.js'
+		'./js/mapColombia.js',
+		'./js/mapBrazil.js'
 		
 	], 
 	buildFilesFoldersRemove:[

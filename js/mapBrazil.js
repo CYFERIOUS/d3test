@@ -1,42 +1,40 @@
-
-var app = angular.module('maps',[]);
-
-app.directive('mapColombia', function(){
+app.directive('mapBrazil', function(){
 	return{
 		restrict:'E',
 		templateUrl:'../directives/map-colombia.html',
-		controller: 'mapsCol',
+		controller: 'mapsBra',
 		controllerAs:'view'
 
 	};
 
 });
 
-app.controller('mapsCol', function(){
+app.controller('mapsBra', function(){
 
-var TestModule = (function () {
- 	
- 	var canvas1 = d3.select("#mapo")
+var TestModule2 = (function () {
+
+	var canvas1 = d3.select("#mepo")
 		.append("svg")
-		.attr("width", 200)
+		.attr("width", 800)
 		.attr("height",200)
-		.style("background-color", 'blue');
+		.style("background-color", 'red');
+ 
  
 	var drawCircle = function(){
-		
+
 
 		var circle = canvas1.append("circle")
 							.attr("cx",100)
 							.attr("cy",100)
 							.attr("r",50)
-							.attr("fill","#000");
+							.attr("fill","blue");
 	};
 	var drawRectangle = function(){
 		
 		var rectangle = canvas1.append("rect")
 							.attr("width",100)
 							.attr("height",60)
-							.attr("fill","red");
+							.attr("fill","green");
 
 	};
 	
@@ -48,12 +46,7 @@ var TestModule = (function () {
  
 })();
 
-	var circulo = TestModule.d3SVGCircleExample();
-	var rectangulo = TestModule.d3SVGRectangleExample();
+	var circulo = TestModule2.d3SVGCircleExample();
+	var rectangulo = TestModule2.d3SVGRectangleExample();
 
 });
-
-
-
-
-
