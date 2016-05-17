@@ -8,8 +8,10 @@
 
 var config = {
 	jsConcatFiles: [
-		'./js/mapColombia.js',
-		'./js/mapBrazil.js'
+	
+		'./js/mapBrazil.js',
+		'./js/treeMap.js',
+		'./js/donutChart.js',
 		
 	], 
 	buildFilesFoldersRemove:[

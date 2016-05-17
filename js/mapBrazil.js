@@ -1,7 +1,8 @@
+var app = angular.module('maps',[]);
 app.directive('mapBrazil', function(){
 	return{
 		restrict:'E',
-		templateUrl:'../directives/map-colombia.html',
+		templateUrl:'../directives/map-brazil.html',
 		controller: 'mapsBra',
 		controllerAs:'view'
 
