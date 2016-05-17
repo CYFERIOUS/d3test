@@ -24,26 +24,41 @@ app.controller('donutCtrl', ['$scope','$element',function($scope,$element){
 
 var DonutModule = (function () {
 
-	var chart = d3.select($element[0]).append("svg").style("background-color","red");
+	function donutDrawer(){
 
-	var drawCircle = function(){
+	    var chart = c3.generate({
+		bindto: $element[0],
+		size:{width:600,height:600},
+		data: {
+	            columns: [
+			['Personas que no están en condición de pobreza multidimensional', 54.4],
+			['Personas en condición de pobreza multidimensional', 45.6],
+	            ],
+	            type : 'donut'
+		},
+		donut:{label:{
+		    format: function (value, ratio, id) {
+			return d3.format('.1%')(ratio).replace('.',',');
+		    }
+		}},
+		tooltip:{show: false},
+	        title: "pobreza por el IPM Ajustado",
+		legend:{item:{onclick:function(id){}}}
+	    });
 
-		var circle = chart.append("circle")
-							.attr("cx",100)
-							.attr("cy",100)
-							.attr("r",50)
-							.attr("fill","blue");
+	    alert("salio");
+
 	};
 	
   return {
  
-		d3SVGCircleExample:drawCircle,
+		d3SVGCircleExample:donutDrawer,
 	
   	};
  
 })();
 
-$scope.sendForm = DonutModule.d3SVGCircleExample();
+DonutModule.d3SVGCircleExample();
 	
 
 }]);

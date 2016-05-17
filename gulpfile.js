@@ -10,8 +10,8 @@ var config = {
 	jsConcatFiles: [
 	
 		
-		
 		'./js/donutChart.js',
+		
 		
 		
 	], 

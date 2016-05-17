@@ -1,4 +1,6 @@
 
+var app = angular.module('maps',[]);
+
 app.directive('treeMap', function(){
 	return{
 		restrict:'E',
