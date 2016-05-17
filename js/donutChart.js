@@ -6,7 +6,10 @@ app.directive('donutChart', function(){
 	var donutFrame = {
 
 		restrict:'A',
-		scope:{},
+		scope:{
+
+			data: '@'
+		},
 		controller:'donutCtrl',
 
 	};
@@ -17,9 +20,11 @@ app.directive('donutChart', function(){
 
 app.controller('donutCtrl', ['$scope','$element',function($scope,$element){
 
+	alert($scope.data);
+
 var DonutModule = (function () {
 
-	var chart = d3.select($element[0]).append("svg");
+	var chart = d3.select($element[0]).append("svg").style("background-color","red");
 
 	var drawCircle = function(){
 

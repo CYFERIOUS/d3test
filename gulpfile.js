@@ -9,9 +9,10 @@
 var config = {
 	jsConcatFiles: [
 	
-		'./js/mapBrazil.js',
-		'./js/treeMap.js',
+		
+		
 		'./js/donutChart.js',
+		
 		
 	], 
 	buildFilesFoldersRemove:[
