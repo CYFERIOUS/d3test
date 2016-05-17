@@ -2,7 +2,7 @@
 var app = angular.module('maps',[]);
 
 app.directive('donutChart', function(){
-		
+
 	var donutFrame = {
 
 		restrict:'A',
@@ -20,45 +20,44 @@ app.directive('donutChart', function(){
 
 app.controller('donutCtrl', ['$scope','$element',function($scope,$element){
 
-	alert($scope.data);
+	var DonutModule = (function () {
 
-var DonutModule = (function () {
+		function donutDrawer(){
 
-	function donutDrawer(){
+			d3.json($scope.data, function(error, json) {
+				if (error) return console.warn(error);
+				var data = json;
+				var chart = c3.generate({
+					bindto: $element[0],
+					size:{width:600,height:600},
+					data: {
+						columns: json,
+						type : 'donut'
+					},
+					donut:{label:{
+						format: function (value, ratio, id) {
+							return d3.format('.1%')(ratio).replace('.',',');
+						}
+					}},
+					tooltip:{show: false},
+					title: "pobreza por el IPM Ajustado",
+					legend:{item:{onclick:function(id){}}}
+				});
 
-	    var chart = c3.generate({
-		bindto: $element[0],
-		size:{width:600,height:600},
-		data: {
-	            columns: [
-			['Personas que no están en condición de pobreza multidimensional', 54.4],
-			['Personas en condición de pobreza multidimensional', 45.6],
-	            ],
-	            type : 'donut'
-		},
-		donut:{label:{
-		    format: function (value, ratio, id) {
-			return d3.format('.1%')(ratio).replace('.',',');
-		    }
-		}},
-		tooltip:{show: false},
-	        title: "pobreza por el IPM Ajustado",
-		legend:{item:{onclick:function(id){}}}
-	    });
 
-	    alert("salio");
+			});
 
-	};
-	
-  return {
- 
-		d3SVGCircleExample:donutDrawer,
-	
-  	};
- 
-})();
+		};
 
-DonutModule.d3SVGCircleExample();
+		return {
+
+			d3SVGCircleExample:donutDrawer,
+
+		};
+
+	})();
+
+	DonutModule.d3SVGCircleExample();
 	
 
 }]);
