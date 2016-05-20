@@ -24,7 +24,8 @@
   "homepage": "https://github.com/CYFERIOUS/d3test",
   "dependencies": {
     "angular": "^1.5.5",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0"
   },
   "devDependencies": {
     "browser-sync": "^2.12.5",
@@ -33,6 +34,7 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
+    "gulp-install": "^0.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^2.0.0-alpha",
