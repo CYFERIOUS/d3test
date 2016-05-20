@@ -8,11 +8,12 @@
 
 var config = {
 	jsConcatFiles: [
-	
 		
+		'./js/pyramidChart.js',
 		'./js/donutChart.js',
+		'./js/mapChart.js',
 		
-		
+	
 		
 	], 
 	buildFilesFoldersRemove:[
