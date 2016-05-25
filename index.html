@@ -7,27 +7,23 @@
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/locale_esCo.js"></script>
 <title>angular test</title>
 <link href="css/test.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <form>
-  <label><input type="radio" name="mode" value="size" checked> Size</label>
-  <label><input type="radio" name="mode" value="count"> Count</label>
-</form>
+  
     <a>its angular: {{4 + 5}}</a>
 
 <div donut-chart data="json/donut.json"></div>
 <div donut-chart data="json/donut1.json"></div>
 <a donut-chart data="json/donut2.json"></a>
 
+           
+<div pyramid-chart data="json/Grupos_etnicos.csv" ></div>    
 
-
-<a donut-chart data="json/donut3.json"></a>
-
-<div pyramid-chart data="piramico"></div>
-
+ 
 <div map-chart data="mapamico"></div>
 
 
