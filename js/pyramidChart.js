@@ -1,5 +1,5 @@
 
-var app = angular.module('maps',[]);
+var app = angular.module('maps');
 app.directive('pyramidChart',pyramidChart).controller('pyramidCtrl',pyramidCtrl);
 
 
