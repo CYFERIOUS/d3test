@@ -27,7 +27,9 @@
   "dependencies": {
     "jquery": "^2.2.3",
     "d3": "^3.5.16",
-    "angular": "angularjs#^1.5.5"
+    "angular": "angularjs#^1.5.5",
+    "angular-mocks": "^1.5.5",
+    "angular-route": "^1.5.5"
   },
   "devDependencies": {
     "c3": "^0.4.11"

@@ -1,27 +1,6 @@
-var app = angular.module('maps');
-app.directive('test.controller',testChart).controller('testCtrl',testCtrl);
-
-
-function testChart(){
-
-	var testFrame = {
-
-		restrict:'A',
-		scope:{
-
-			data: '@'
-		},
-		controller:'testCtrl',
-
-	};
-
-	return testFrame;
-
-};
-testCtrl.$inject = ['$scope','$element'];
-function testCtrl($scope,$element){
-
+var app = angular.module('testMod', []);
+app.controller('testCtrl',testCtrl);
+testCtrl.$inject = ['$scope'];
+function testCtrl($scope){
 	console.log($scope.data);
-		
-
 }

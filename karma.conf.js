@@ -26,6 +26,8 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
+        './js/mapBrazil.js',
+        './js/treeMap.js'
     ],
 
 
